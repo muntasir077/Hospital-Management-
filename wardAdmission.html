@@ -1,0 +1,234 @@
+<!doctype html>
+<html lang="en">
+
+<head>
+    <title>Title</title>
+    <!-- Required meta tags -->
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
+    <!-- Bootstrap CSS -->
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css"
+        integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+    <link rel="stylesheet" href="css/style.css">
+</head>
+
+<body>
+    <section>
+        <div class="wrapper d-flex align-items-stretch">
+            <nav id="sidebar" class="active">
+                <h1><a href="index.html" class="logo">Hospital</a></h1>
+                <ul class="list-unstyled components mb-5">
+                    <li class="active">
+                        <a href="index.html"><span class="fa fa-dashboard"></span> Dashboard</a>
+                    </li>
+                    <li class="active">
+                        <a href="#homeSubmenu" data-toggle="collapse" aria-expanded="false"
+                            class="dropdown-toggle"><span class="fa fa-stethoscope"></span> OPD</a>
+                        <ul class="collapse list-unstyled" id="homeSubmenu">
+                            <li>
+                                <a href="add_opd.html">Add OPD Patient</a>
+                            </li>
+                            <li>
+                                <a href="opd_token.html">Add OPD Token</a>
+                            </li>
+                            <li>
+                                <a href="#">Home 3</a>
+                            </li>
+                        </ul>
+                    </li>
+                    <li>
+                        <a href="ambulance.html"><span class="fa fa-ambulance"></span> Ambulance</a>
+                    </li>
+                    <li>
+                        <a href="medicine.html"><span class="fa fa-medkit"></span> Medicine</a>
+                    </li>
+                    <li>
+                        <a href="add_emergency.html"><span class="fa fa-hospital-o"></span>Emergency Treatment</a>
+                    </li>
+                    <li class="active">
+                        <a href="#employeeSubmenu" data-toggle="collapse" aria-expanded="false"
+                            class="dropdown-toggle"><span class="fa fa-user"></span> Employee</a>
+                        <ul class="collapse list-unstyled" id="employeeSubmenu">
+                            <li>
+                                <a href="add_employee.html">Add Employee </a>
+                            </li>
+                            <li>
+                                <a href="employee_payroll.html">Employee Payroll </a>
+                            </li>
+                            <li>
+                                <a href="#">Home 3</a>
+                            </li>
+                        </ul>
+                    </li>
+                    <li class="active">
+                        <a href="#testSubmenu" data-toggle="collapse" aria-expanded="false"
+                            class="dropdown-toggle"><span class="fa fa-paste"></span> Test</a>
+                        <ul class="collapse list-unstyled" id="testSubmenu">
+                            <li>
+                                <a href="sample_test.html"> Test sample</a>
+                            </li>
+                            <li>
+                                <a href="#">Report</a>
+                            </li>
+                            <li>
+                                <a href="#">Home 3</a>
+                            </li>
+                        </ul>
+                    </li>
+                    <li class="active">
+                        <a href="#AdmissionSubmenu" data-toggle="collapse" aria-expanded="false"
+                            class="dropdown-toggle"><span class="fa fa-wheelchair"></span> Admission</a>
+                        <ul class="collapse list-unstyled" id="AdmissionSubmenu">
+                            <li>
+                                <a href="wardAdmission.html"> Ward Admission</a>
+                            </li>
+                            <li>
+                                <a href="#">ICU Admission</a>
+                            </li>
+                            <li>
+                                <a href="#">Home 3</a>
+                            </li>
+                        </ul>
+                    </li>
+                </ul>
+            </nav>
+            <!-- Page Content  -->
+            <div id="content">
+
+                <nav class="navbar navbar-expand-lg navbar-light bg-light">
+                    <div class="container-fluid">
+
+                        <button type="button" id="sidebarCollapse" class="btn btn-primary">
+                            <i class="fa fa-bars" aria-hidden="true"></i>
+                            <span class="sr-only">Toggle Menu</span>
+                        </button>
+                        <button class="btn btn-dark d-inline-block d-lg-none ml-auto" type="button"
+                            data-toggle="collapse" data-target="#navbarSupportedContent"
+                            aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+                            <i class="fa fa-bars" aria-hidden="true"></i>
+                        </button>
+
+                        <div class="collapse navbar-collapse" id="navbarSupportedContent">
+                            <ul class="nav navbar-nav ml-auto">
+                                <li class="nav-item active">
+                                    <a class="nav-link" href="#">Home</a>
+                                </li>
+                                <li class="nav-item">
+                                    <a class="nav-link" href="#">About</a>
+                                </li>
+                                <li class="nav-item">
+                                    <a class="nav-link" href="add_opd.html">OPD</a>
+                                </li>
+                                <li class="nav-item">
+                                    <a class="nav-link" href="log.html">Log In</a>
+                                </li>
+                            </ul>
+                        </div>
+                    </div>
+                </nav>
+                <div class="container">
+                    <div class="row">
+                        <div class="col-md-12" id="printableArea">
+                            <form class="border">
+                                <div class="text-center h1">
+                                    <h1 class="h1">Ward Admission Form</h1>
+                                    <hr class="bg-info w-50">
+                                </div>
+
+
+                                <div class="form-group col-md-6">
+                                    <label for="inputPatientId">Patient ID</label>
+                                    <input type="text" class="form-control" id="inputPatientId" placeholder="">
+                                </div>
+
+                                <div class="form-row col-md-12">
+                                    <div class="form-group col-md-6">
+                                        <label for="inputFirstName">First Name</label>
+                                        <input type="text" class="form-control" id="inputFirstName" placeholder="">
+                                    </div>
+                                    <div class="form-group col-md-6">
+                                        <label for="inputLastName">Last Name</label>
+                                        <input type="text" class="form-control" id="inputLastName" placeholder="">
+                                    </div>
+                                </div>
+                                <div class="form-row col-md-12">
+                                    <div class="form-group col-md-6">
+                                        <label for="inputAge">Age</label>
+                                        <input type="text" class="form-control" id="inputMLTId" placeholder="">
+                                    </div>
+                                    <div class="form-group col-md-6">
+                                        <label for="inputTelephone">Telephone Number</label>
+                                        <input type="text" class="form-control" id="inputTelephone">
+                                    </div>
+                                </div>
+                                <div class="form-group col-md-6">
+                                    <label for="Address">Address</label>
+                                    <textarea class="form-control textarea" id="Address" rows="2"></textarea>
+                                </div>
+                                <div class="form-row col-md-12">
+                                    <div class="col-md-12">Guardian Information
+                                        <hr class="bg-info">
+                                    </div>
+
+                                    <div class="form-group col-md-6">
+                                        <label for="inputGuardianName">Name</label>
+                                        <input type="text" class="form-control" id="inputName">
+                                    </div>
+                                    <div class="form-group col-md-6">
+                                        <label for="inputGuardianContactNumber">Contact Number</label>
+                                        <input type="text" class="form-control" id="inputGuardianContactNumber">
+                                    </div>
+                                </div>
+                                <div class="form-row col-md-12">
+                                    <div class="form-group col-md-4">
+                                        <label for="date">Admitted Date</label>
+
+                                        <input id="datepicker" max="3000-12-31" min="1000-01-01" class="form-control">
+
+                                    </div>
+                                    <div class="form-group col-md-4">
+                                        <label for="inputWardNo">Ward No</label>
+                                        <input type="text" class="form-control" id="inputWardNo">
+                                    </div>
+                                    <div class="form-group col-md-4">
+                                        <label for="inputBedNo">Bed No</label>
+                                        <input type="text" class="form-control" id="inputBedNo">
+                                    </div>
+                                </div>
+                                <div class="form-group col-md-6">
+                                    <label for="Address">Allergies</label>
+                                    <textarea class="form-control textarea" id="Address" rows="2"></textarea>
+                                </div>
+
+                                <div class="row form-group">
+                                    <div class="col-md-6 col-sm-6 offset-md-5">
+                                        <button class="btn btn-primary" type="reset">Reset</button>
+                                        <button class="btn btn-success" type="submit">Save</button>
+                                    </div>
+                                </div>
+                            </form>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Optional JavaScript -->
+    <!-- jQuery first, then Popper.js, then Bootstrap JS -->
+    <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js"
+        integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo"
+        crossorigin="anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js"
+        integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1"
+        crossorigin="anonymous"></script>
+    <script
+        src="https://cdnjs.cloudflare.com/ajax/libs/bootstrap-datepicker/1.7.1/js/bootstrap-datepicker.min.js"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js"
+        integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM"
+        crossorigin="anonymous"></script>
+    <script src="js/main.js"></script>
+</body>
+
+</html>
